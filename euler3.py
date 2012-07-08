@@ -1,13 +1,16 @@
+# What is the largest prime factor of the number 600851475143?
 from math import sqrt
 from sys import argv
 
 factors = []
 
+# lists the devisors of passed number
 def divisors(n):
     for x in range(3,int(sqrt(n))+2,2):
         if n % x == 0:
             factors.append(x)
 
+# checks if number passed is a prime
 def isPrime():
     for n in factors:
         if n == 2:
